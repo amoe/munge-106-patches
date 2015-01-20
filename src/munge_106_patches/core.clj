@@ -37,8 +37,9 @@
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (let [dump (read-dump (first args))]
-    (map #(handle-patch % dump) (get-indices dump))))
+  (prn
+   (let [dump (read-dump (first args))]
+    (map #(handle-patch % dump) (get-indices dump)))))
 
 
 
