@@ -8,12 +8,12 @@
 (html/deftemplate table-page "table.html" [table]
   [:table.mylist :tr.patch]  (html/clone-for [patch table]
                                [:td.name]  (html/content (:name patch))
-                               [:td.definition]  (html/content (:definition patch))))
+                               [:td.vcf-freq]  (html/content (str (:vcf-freq (:definition patch))))))
   
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (reduce str (table-page (first args))))
+  (spit "out.html" (reduce str (table-page (first args)))))
 
 (defn countdown [n]
   (html/sniptest "<ul><li></li></ul>"
