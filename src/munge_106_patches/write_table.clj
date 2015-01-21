@@ -18,6 +18,9 @@
   [:table.mylist :tr.patch]
   (html/clone-for [patch table]
                   [:td.name]  (html/content (:name patch))
+                  [:td.lfo-rate]
+                  (html/content (format-numeric patch :lfo-rate))
+                  
                   [:td.lfo-delay-time]
                   (html/content (format-numeric patch :lfo-delay-time))
                   [:td.range]
