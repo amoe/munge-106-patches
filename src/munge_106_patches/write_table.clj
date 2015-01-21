@@ -8,7 +8,9 @@
 (html/deftemplate table-page "table.html" [table]
   [:table.mylist :tr.patch]  (html/clone-for [patch table]
                                [:td.name]  (html/content (:name patch))
-                               [:td.vcf-freq]  (html/content (str (:vcf-freq (:definition patch))))))
+                               [:td.lfo-delay-time]
+                               (html/content (format "%.2f"
+                                                     (:lfo-delay-time (:definition patch))))))
   
 (defn -main
   "I don't do a whole lot ... yet."
