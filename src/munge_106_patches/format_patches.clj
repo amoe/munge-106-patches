@@ -8,52 +8,52 @@
 (declare roundscale)
 
 (defn lfo-rate [n]
-  (roundscale n 10))
+  {:lfo-rate (roundscale n 10)})
 
 (defn lfo-delay-time [n]
-  (roundscale n 10))
+  {:lfo-delay-time (roundscale n 10)})
 
 (defn dco-lfo [n]
-  (roundscale n 10))
+  {:dco-lfo (roundscale n 10)})
 
 (defn dco-pwm [n]
-  (roundscale n 10))
+  {:dco-pwm (roundscale n 10)})
 
 (defn dco-noise [n]
-  (roundscale n 10))
+  {:dco-noise (roundscale n 10)})
 
 (defn vcf-freq [n]
-  (roundscale n 10))
+  {:vcf-freq (roundscale n 10)})
 
 (defn vcf-res [n]
-  (roundscale n 10))
+  {:vcf-res (roundscale n 10)})
 
 (defn vcf-env [n]
-  (roundscale n 10))
+  {:vcf-env (roundscale n 10)})
 
 (defn vcf-lfo [n]
-  (roundscale n 10))
+  {:vcf-lfo (roundscale n 10)})
 
 (defn vcf-kybd [n]
-  (roundscale n 10))
+  {:vcf-kybd (roundscale n 10)})
 
 (defn vca-level [n]
-  (roundscale n 10))
+  {:vca-level (roundscale n 10)})
 
 (defn env-a [n]
-  (roundscale n 10))
+  {:env-a (roundscale n 10)})
 
 (defn env-d [n]
-  (roundscale n 10))
+  {:env-d (roundscale n 10)})
 
 (defn env-s [n]
-  (roundscale n 10))
+  {:env-s (roundscale n 10)})
 
 (defn env-r [n]
-  (roundscale n 10))
+  {:env-r (roundscale n 10)})
 
 (defn dco-sub [n]
-  (roundscale n 10))
+  {:dco-sub (roundscale n 10)})
 
 ; Ummm....
 (defn bitmask-1 [n]
@@ -106,9 +106,10 @@
   (read-string (slurp path)))
 
 (defn format-definition [definition]
-  (map (fn [f x] (apply f [x]))    ; unary apply
-       sysex-controls
-       definition))
+  (apply merge
+         (map (fn [f x] (apply f [x]))    ; unary apply
+              sysex-controls
+              definition)))
 
 (defn format-data [data]
   (map
@@ -117,7 +118,7 @@
    data))
   
 (defn roundscale [n max]
-  (format "%.2f" (double (* (/ n 127) max))))
+  (double (* (/ n 127) max)))
 
 (defn -main
   "I don't do a whole lot ... yet."
