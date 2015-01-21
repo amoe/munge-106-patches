@@ -64,13 +64,13 @@
    :tri? (bit-test n 4)
    :chorus (if (bit-test n 5)
              (if (bit-test n 6) "1" "2")
-             false)})
+             "0")})
    
 
 (defn bitmask-2 [n]
   {:pwm-mode (if (bit-test n 0) "MAN" "LFO")
    :env-mode (if (bit-test n 1) "GATE" "ENV")
-   :polarity (if (bit-test n 2) "negative" "positive")
+   :polarity (if (bit-test n 2) "+" "−")
    :hpf (cond
          (and (not (bit-test n 3))
               (not (bit-test n 4)))  "3"
@@ -124,7 +124,8 @@
   "I don't do a whole lot ... yet."
   [& args]
   (let [data (read-data (first args))]
-    (format-data data)))
+    (sort #(compare (:name %1) (:name %2))
+          (format-data data))))
 
 
 
