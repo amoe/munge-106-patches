@@ -1,0 +1,811 @@
+read: Library _h0x7e0003 = r_0x7e0000;  
+//// BEGIN stream content output
+Library _h0x7e0003 = r_0x7e0000;  
+//// END stream content output
+
+//// BEGIN class declarations (excluding array classes)
+class java.util.Vector implements java.io.Serializable {
+    int capacityIncrement;
+    int elementCount;
+    java.lang.Object[] elementData;
+}
+
+class Library implements java.io.Serializable {
+    java.lang.String name;
+    java.util.Vector v;
+}
+
+class Patch implements java.io.Serializable {
+    java.lang.String name;
+    byte[] sysex;
+}
+
+//// END class declarations
+
+//// BEGIN instance dump
+[instance 0x7e018a: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e018c: [array 0x7e018c classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 50, 0, 0, 45, 0, 38, 84, 32, 0, 127, 101, 0, 49, 55, 0, 56, 57, 25]
+        name: r0x7e018b: [String 0x7e018b: "B88 Owgan"]
+]
+[instance 0x7e0184: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0186: [array 0x7e0186 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 50, 11, 0, 44, 0, 29, 4, 88, 5, 95, 79, 0, 48, 23, 42, 9, 76, 1]
+        name: r0x7e0185: [String 0x7e0185: "B86 Forbidden Planet"]
+]
+[instance 0x7e0187: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0189: [array 0x7e0189 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 78, 0, 0, 0, 0, 55, 127, 43, 0, 127, 77, 0, 0, 0, 0, 127, 41, 23]
+        name: r0x7e0188: [String 0x7e0188: "B87 Froggy"]
+]
+[instance 0x7e0181: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0183: [array 0x7e0183 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 108, 0, 0, 0, 0, 110, 127, 80, 63, 127, 0, 0, 127, 51, 89, 0, 2, 26]
+        name: r0x7e0182: [String 0x7e0182: "B85 Rocket Men"]
+]
+[instance 0x7e0106: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0108: [array 0x7e0108 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 77, 94, 0, 73, 0, 47, 34, 53, 0, 65, 42, 0, 11, 34, 0, 79, 90, 29]
+        name: r0x7e0107: [String 0x7e0107: "B34 Chorus Funk"]
+]
+[instance 0x7e0100: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0102: [array 0x7e0102 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 106, 0, 0, 48, 0, 82, 5, 93, 127, 0, 72, 0, 0, 35, 76, 127, 10, 27]
+        name: r0x7e0101: [String 0x7e0101: "B32 Helicopter"]
+]
+[instance 0x7e0103: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0105: [array 0x7e0105 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 52, 0, 2, 105, 0, 29, 0, 35, 0, 86, 127, 0, 48, 34, 87, 0, 42, 25]
+        name: r0x7e0104: [String 0x7e0104: "B33 Lute"]
+]
+[instance 0x7e010c: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e010e: [array 0x7e010e classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 127, 0, 0, 0, 0, 58, 127, 16, 76, 64, 0, 0, 0, 127, 85, 0, 68, 24]
+        name: r0x7e010d: [String 0x7e010d: "B36 FX Sweep 1"]
+]
+[instance 0x7e010f: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0111: [array 0x7e0111 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 21, 0, 0, 73, 0, 33, 0, 53, 0, 65, 55, 2, 18, 112, 0, 0, 60, 28]
+        name: r0x7e0110: [String 0x7e0110: "B37 Sharp Reed"]
+]
+[instance 0x7e0109: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e010b: [array 0x7e010b classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 78, 0, 0, 105, 0, 49, 125, 15, 2, 127, 57, 0, 14, 79, 0, 0, 36, 31]
+        name: r0x7e010a: [String 0x7e010a: "B35 Tomita"]
+]
+[instance 0x7e0115: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0117: [array 0x7e0117 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 52, 0, 15, 0, 0, 66, 107, 31, 0, 73, 62, 0, 52, 39, 0, 0, 17, 30]
+        name: r0x7e0116: [String 0x7e0116: "B41 Resonant Rise"]
+]
+[instance 0x7e0112: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0114: [array 0x7e0114 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 0, 0, 0, 60, 0, 37, 29, 28, 0, 43, 92, 0, 42, 35, 0, 0, 57, 24]
+        name: r0x7e0113: [String 0x7e0113: "B38 Bass Pluck"]
+]
+[instance 0x7e011e: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0120: [array 0x7e0120 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 78, 0, 0, 81, 0, 61, 101, 46, 0, 127, 127, 0, 0, 0, 0, 0, 42, 23]
+        name: r0x7e011f: [String 0x7e011f: "B44 Contact Wah"]
+]
+[instance 0x7e0118: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e011a: [array 0x7e011a classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 0, 0, 0, 105, 0, 127, 95, 0, 0, 127, 107, 0, 45, 0, 0, 35, 60, 17]
+        name: r0x7e0119: [String 0x7e0119: "B42 Harpsichord 2"]
+]
+[instance 0x7e011b: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e011d: [array 0x7e011d classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 0, 0, 0, 57, 0, 55, 0, 0, 0, 107, 67, 21, 0, 127, 35, 75, 90, 27]
+        name: r0x7e011c: [String 0x7e011c: "B43 Dark Ensemble"]
+]
+[instance 0x7e0127: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0129: [array 0x7e0129 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 11, 45, 5, 105, 0, 79, 0, 0, 0, 127, 99, 84, 45, 57, 49, 0, 10, 24]
+        name: r0x7e0128: [String 0x7e0128: "B47 Phase Ensemble"]
+]
+[instance 0x7e0124: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0126: [array 0x7e0126 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 0, 94, 0, 28, 0, 24, 34, 61, 0, 65, 112, 6, 18, 50, 38, 0, 42, 25]
+        name: r0x7e0125: [String 0x7e0125: "B46 Glassy Wah"]
+]
+[instance 0x7e0121: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0123: [array 0x7e0123 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 127, 0, 0, 0, 127, 127, 0, 83, 0, 104, 116, 127, 79, 26, 83, 0, 68, 26]
+        name: r0x7e0122: [String 0x7e0122: "B45 Noise Sweep 2"]
+]
+[instance 0x7e012d: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e012f: [array 0x7e012f classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 50, 11, 0, 91, 0, 32, 0, 63, 0, 0, 108, 0, 43, 55, 0, 7, 41, 9]
+        name: r0x7e012e: [String 0x7e012e: "B51 Clav"]
+]
+[instance 0x7e012a: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e012c: [array 0x7e012c classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 0, 11, 0, 105, 0, 59, 127, 0, 0, 127, 62, 0, 62, 0, 57, 101, 76, 24]
+        name: r0x7e012b: [String 0x7e012b: "B48 Chorused Bell"]
+]
+[instance 0x7e0136: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0138: [array 0x7e0138 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 127, 0, 0, 0, 127, 127, 0, 127, 0, 104, 107, 0, 79, 57, 83, 0, 68, 26]
+        name: r0x7e0137: [String 0x7e0137: "B54 Auto Release Noise Sweep"]
+]
+[instance 0x7e0133: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0135: [array 0x7e0135 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 84, 38, 9, 90, 0, 35, 0, 43, 9, 98, 127, 5, 127, 106, 2, 0, 41, 1]
+        name: r0x7e0134: [String 0x7e0134: "B53 Bassoon"]
+]
+[instance 0x7e0130: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0132: [array 0x7e0132 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 81, 0, 0, 104, 0, 54, 106, 7, 0, 127, 79, 0, 0, 0, 0, 0, 81, 29]
+        name: r0x7e0131: [String 0x7e0131: "B52 Organ 2"]
+]
+[instance 0x7e013f: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0141: [array 0x7e0141 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 72, 45, 0, 29, 0, 0, 102, 62, 0, 90, 30, 0, 117, 0, 120, 0, 90, 25]
+        name: r0x7e0140: [String 0x7e0140: "B57 Chorus Bell 2"]
+]
+[instance 0x7e013c: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e013e: [array 0x7e013e classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 69, 0, 0, 105, 0, 47, 120, 0, 0, 127, 60, 92, 50, 127, 55, 59, 26, 24]
+        name: r0x7e013d: [String 0x7e013d: "B56 Ethereal"]
+]
+[instance 0x7e0139: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e013b: [array 0x7e013b classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 25, 94, 0, 73, 0, 47, 34, 35, 0, 65, 39, 6, 68, 67, 38, 0, 90, 24]
+        name: r0x7e013a: [String 0x7e013a: "B55 Brass Ensemble"]
+]
+[instance 0x7e0142: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0144: [array 0x7e0144 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 1, 0, 0, 105, 127, 56, 89, 7, 38, 121, 127, 78, 98, 87, 78, 0, 36, 0]
+        name: r0x7e0143: [String 0x7e0143: "B58 Blizzard"]
+]
+[instance 0x7e0145: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0147: [array 0x7e0147 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 44, 0, 0, 21, 0, 22, 0, 35, 7, 107, 103, 0, 65, 60, 98, 127, 44, 16]
+        name: r0x7e0146: [String 0x7e0146: "B61 E. Piano with Tremolo"]
+]
+[instance 0x7e0148: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e014a: [array 0x7e014a classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 69, 22, 9, 0, 0, 35, 0, 43, 7, 98, 104, 5, 127, 106, 7, 0, 42, 1]
+        name: r0x7e0149: [String 0x7e0149: "B62 Clarinet"]
+]
+[instance 0x7e014b: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e014d: [array 0x7e014d classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 127, 0, 0, 0, 127, 2, 0, 77, 0, 104, 107, 0, 22, 108, 120, 0, 33, 24]
+        name: r0x7e014c: [String 0x7e014c: "B63 Thunder"]
+]
+[instance 0x7e014e: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0150: [array 0x7e0150 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 35, 18, 0, 73, 0, 33, 0, 53, 0, 65, 69, 3, 44, 109, 0, 0, 42, 28]
+        name: r0x7e014f: [String 0x7e014f: "B64 Reedy Organ"]
+]
+[instance 0x7e0151: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0153: [array 0x7e0153 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 34, 0, 0, 59, 0, 25, 0, 42, 0, 65, 22, 21, 73, 71, 48, 0, 25, 24]
+        name: r0x7e0152: [String 0x7e0152: "B65 Flute / Horn"]
+]
+[instance 0x7e0154: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0156: [array 0x7e0156 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 30, 45, 127, 0, 0, 58, 127, 0, 0, 127, 107, 0, 89, 0, 39, 0, 36, 0]
+        name: r0x7e0155: [String 0x7e0155: "B66 Toy Rhodes"]
+]
+[instance 0x7e0157: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0159: [array 0x7e0159 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 1, 0, 0, 105, 127, 84, 11, 0, 49, 54, 75, 33, 97, 127, 121, 0, 36, 10]
+        name: r0x7e0158: [String 0x7e0158: "B67 Surf's Up"]
+]
+[instance 0x7e015a: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e015c: [array 0x7e015c classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 50, 0, 0, 50, 0, 63, 84, 65, 0, 127, 70, 127, 0, 107, 0, 47, 57, 31]
+        name: r0x7e015b: [String 0x7e015b: "B68 OW Bass"]
+]
+[instance 0x7e015d: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e015f: [array 0x7e015f classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 70, 28, 0, 14, 0, 4, 0, 63, 16, 98, 87, 16, 103, 106, 21, 0, 60, 9]
+        name: r0x7e015e: [String 0x7e015e: "B71 Piccolo"]
+]
+[instance 0x7e0163: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0165: [array 0x7e0165 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 51, 127, 0, 73, 0, 45, 100, 35, 0, 65, 84, 4, 90, 0, 27, 0, 50, 28]
+        name: r0x7e0164: [String 0x7e0164: "B73 Meow Brass"]
+]
+[instance 0x7e0160: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0162: [array 0x7e0162 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 99, 0, 0, 0, 127, 72, 112, 0, 0, 127, 127, 0, 24, 0, 24, 0, 65, 0]
+        name: r0x7e0161: [String 0x7e0161: "B72 Melodic Taps"]
+]
+[instance 0x7e0166: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0168: [array 0x7e0168 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 71, 45, 22, 0, 0, 89, 0, 0, 3, 120, 85, 43, 45, 57, 26, 0, 52, 24]
+        name: r0x7e0167: [String 0x7e0167: "B74 Violin (high)"]
+]
+[instance 0x7e0169: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e016b: [array 0x7e016b classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 30, 45, 127, 0, 0, 76, 127, 0, 0, 127, 111, 0, 22, 52, 59, 0, 36, 0]
+        name: r0x7e016a: [String 0x7e016a: "B75 High Bells"]
+]
+[instance 0x7e016f: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0171: [array 0x7e0171 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 0, 11, 0, 104, 0, 76, 127, 0, 0, 127, 83, 0, 23, 23, 57, 0, 76, 24]
+        name: r0x7e0170: [String 0x7e0170: "B77 Ping Bell"]
+]
+[instance 0x7e016c: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e016e: [array 0x7e016e classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 36, 0, 0, 105, 0, 60, 9, 0, 127, 0, 77, 34, 55, 127, 105, 0, 42, 24]
+        name: r0x7e016d: [String 0x7e016d: "B76 Rolling Wah"]
+]
+[instance 0x7e0172: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0174: [array 0x7e0174 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 16, 0, 0, 68, 0, 8, 0, 87, 0, 52, 14, 0, 36, 109, 0, 56, 89, 24]
+        name: r0x7e0173: [String 0x7e0173: "B78 Brassy Organ"]
+]
+[instance 0x7e0175: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0177: [array 0x7e0177 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 21, 45, 5, 81, 0, 71, 0, 0, 0, 103, 40, 83, 23, 109, 42, 0, 25, 24]
+        name: r0x7e0176: [String 0x7e0176: "B81 Low Dark Strings"]
+]
+[instance 0x7e017b: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e017d: [array 0x7e017d classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 57, 45, 21, 0, 0, 75, 0, 3, 1, 45, 109, 48, 65, 90, 34, 0, 49, 24]
+        name: r0x7e017c: [String 0x7e017c: "B83 Cello"]
+]
+[instance 0x7e0178: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e017a: [array 0x7e017a classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 51, 127, 0, 73, 0, 0, 0, 94, 0, 127, 97, 3, 44, 51, 11, 0, 50, 28]
+        name: r0x7e0179: [String 0x7e0179: "B82 Piccolo Trumpet"]
+]
+[instance 0x7e017e: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0180: [array 0x7e0180 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 80, 0, 10, 70, 0, 92, 0, 0, 0, 71, 48, 27, 57, 57, 41, 0, 28, 24]
+        name: r0x7e017f: [String 0x7e017f: "B84 High Strings"]
+]
+[instance 0x7e009d: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e009f: [array 0x7e009f classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 78, 0, 0, 102, 28, 115, 40, 67, 0, 0, 97, 0, 63, 127, 82, 42, 12, 18]
+        name: r0x7e009e: [String 0x7e009e: "A71 Sweep I"]
+]
+[instance 0x7e009a: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e009c: [array 0x7e009c classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 56, 0, 5, 43, 0, 37, 0, 84, 0, 127, 51, 0, 85, 75, 62, 37, 10, 24]
+        name: r0x7e009b: [String 0x7e009b: "A68 Synth Pad"]
+]
+[instance 0x7e0097: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0099: [array 0x7e0099 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 21, 71, 0, 58, 127, 89, 45, 1, 17, 80, 127, 10, 9, 0, 0, 0, 34, 1]
+        name: r0x7e0098: [String 0x7e0098: "A67 Shaker"]
+]
+[instance 0x7e0094: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0096: [array 0x7e0096 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 0, 0, 0, 35, 127, 25, 0, 54, 0, 24, 127, 1, 56, 26, 71, 47, 33, 17]
+        name: r0x7e0095: [String 0x7e0095: "A66 Timpani (unison)"]
+]
+[instance 0x7e0091: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0093: [array 0x7e0093 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 62, 16, 8, 0, 127, 53, 4, 40, 0, 21, 101, 0, 30, 15, 40, 58, 33, 24]
+        name: r0x7e0092: [String 0x7e0092: "A65 Tom Toms (unison)"]
+]
+[instance 0x7e008e: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0090: [array 0x7e0090 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 52, 27, 0, 0, 91, 94, 11, 17, 0, 0, 101, 0, 25, 0, 30, 64, 34, 17]
+        name: r0x7e008f: [String 0x7e008f: "A64 Snare Drum (unison)"]
+]
+[instance 0x7e008b: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e008d: [array 0x7e008d classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 79, 15, 3, 85, 0, 69, 54, 0, 0, 52, 127, 0, 0, 127, 0, 29, 42, 28]
+        name: r0x7e008c: [String 0x7e008c: "A63 Frontier Organ"]
+]
+[instance 0x7e0088: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e008a: [array 0x7e008a classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 66, 15, 1, 102, 0, 7, 11, 86, 2, 0, 120, 0, 39, 48, 14, 0, 73, 21]
+        name: r0x7e0089: [String 0x7e0089: "A62 Clav"]
+]
+[instance 0x7e0085: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0087: [array 0x7e0087 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 1, 0, 0, 72, 0, 47, 0, 39, 0, 5, 78, 0, 98, 0, 32, 115, 42, 16]
+        name: r0x7e0086: [String 0x7e0086: "A61 Piano II"]
+]
+[instance 0x7e0082: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0084: [array 0x7e0084 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 0, 0, 0, 100, 28, 79, 127, 37, 0, 65, 75, 0, 108, 18, 127, 0, 34, 19]
+        name: r0x7e0083: [String 0x7e0083: "A58 Going Up"]
+]
+[instance 0x7e00be: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00c0: [array 0x7e00c0 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 0, 0, 0, 0, 127, 52, 85, 0, 44, 94, 127, 88, 91, 28, 85, 0, 33, 17]
+        name: r0x7e00bf: [String 0x7e00bf: "A84 Dust Storm"]
+]
+[instance 0x7e00b8: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00ba: [array 0x7e00ba classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 59, 0, 0, 0, 0, 26, 127, 45, 0, 89, 127, 0, 19, 0, 22, 0, 33, 17]
+        name: r0x7e00b9: [String 0x7e00b9: "A82 Resonance Funk"]
+]
+[instance 0x7e00bb: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00bd: [array 0x7e00bd classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 0, 0, 0, 102, 127, 42, 0, 34, 0, 58, 127, 0, 36, 15, 49, 46, 33, 25]
+        name: r0x7e00bc: [String 0x7e00bc: "A83 Drum Booms* (1 oct. down)"]
+]
+[instance 0x7e00b5: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00b7: [array 0x7e00b7 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 127, 0, 0, 102, 56, 70, 107, 5, 0, 72, 91, 3, 48, 127, 98, 0, 73, 19]
+        name: r0x7e00b6: [String 0x7e00b6: "A81 Gong (play low chords)"]
+]
+[instance 0x7e00b2: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00b4: [array 0x7e00b4 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 89, 14, 1, 25, 0, 72, 88, 19, 0, 66, 104, 0, 84, 0, 29, 87, 10, 19]
+        name: r0x7e00b3: [String 0x7e00b3: "A78 Wah Release"]
+]
+[instance 0x7e00ac: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00ae: [array 0x7e00ae classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 127, 0, 0, 0, 0, 56, 86, 6, 0, 71, 79, 0, 47, 0, 50, 127, 26, 26]
+        name: r0x7e00ad: [String 0x7e00ad: "A76 Dark Synth Piano"]
+]
+[instance 0x7e00af: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00b1: [array 0x7e00b1 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 71, 0, 5, 46, 0, 39, 0, 84, 0, 127, 57, 0, 85, 75, 70, 49, 42, 24]
+        name: r0x7e00b0: [String 0x7e00b0: "A77 Sustainer"]
+]
+[instance 0x7e00a9: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00ab: [array 0x7e00ab classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 51, 0, 5, 17, 0, 39, 0, 49, 0, 127, 49, 0, 85, 75, 53, 49, 12, 24]
+        name: r0x7e00aa: [String 0x7e00aa: "A75 Pluck Bell"]
+]
+[instance 0x7e00a6: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00a8: [array 0x7e00a8 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 88, 72, 15, 97, 0, 66, 102, 68, 0, 70, 101, 0, 89, 53, 78, 48, 74, 25]
+        name: r0x7e00a7: [String 0x7e00a7: "A74 Sweep II"]
+]
+[instance 0x7e00a0: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00a2: [array 0x7e00a2 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 68, 48, 0, 68, 0, 60, 111, 9, 6, 98, 45, 0, 91, 0, 77, 125, 26, 8]
+        name: r0x7e00a1: [String 0x7e00a1: "A72 Pluck Sweep"]
+]
+[instance 0x7e00a3: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00a5: [array 0x7e00a5 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 77, 20, 9, 101, 0, 97, 30, 56, 0, 57, 87, 14, 0, 41, 0, 44, 74, 23]
+        name: r0x7e00a4: [String 0x7e00a4: "A73 Repeater"]
+]
+[instance 0x7e00d9: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00db: [array 0x7e00db classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 23, 0, 0, 54, 0, 127, 127, 90, 0, 86, 125, 0, 60, 0, 31, 35, 44, 0]
+        name: r0x7e00da: [String 0x7e00da: "B15 Harpsichord 1"]
+]
+[instance 0x7e00df: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00e1: [array 0x7e00e1 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 62, 38, 8, 0, 0, 0, 0, 90, 0, 73, 65, 0, 16, 78, 116, 0, 74, 25]
+        name: r0x7e00e0: [String 0x7e00e0: "B17 Perc. Pluck"]
+]
+[instance 0x7e00dc: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00de: [array 0x7e00de classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 78, 0, 0, 8, 0, 6, 0, 46, 0, 127, 127, 5, 21, 127, 30, 0, 42, 17]
+        name: r0x7e00dd: [String 0x7e00dd: "B16 Recorder"]
+]
+[instance 0x7e00d3: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00d5: [array 0x7e00d5 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 72, 45, 0, 0, 0, 10, 0, 59, 0, 23, 88, 0, 89, 47, 74, 0, 74, 25]
+        name: r0x7e00d4: [String 0x7e00d4: "B13 Chorus Vibes"]
+]
+[instance 0x7e00d0: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00d2: [array 0x7e00d2 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 66, 45, 20, 0, 0, 77, 0, 0, 0, 120, 110, 43, 45, 57, 26, 0, 50, 24]
+        name: r0x7e00d1: [String 0x7e00d1: "B12 Violin"]
+]
+[instance 0x7e00d6: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00d8: [array 0x7e00d8 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 45, 42, 0, 73, 0, 60, 72, 14, 0, 127, 58, 0, 0, 0, 0, 97, 10, 29]
+        name: r0x7e00d7: [String 0x7e00d7: "B14 Organ 1"]
+]
+[instance 0x7e00ca: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00cc: [array 0x7e00cc classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 0, 0, 0, 102, 127, 68, 118, 0, 0, 69, 107, 0, 13, 38, 47, 0, 33, 8]
+        name: r0x7e00cb: [String 0x7e00cb: "A88 Caverns"]
+]
+[instance 0x7e00cd: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00cf: [array 0x7e00cf classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 57, 45, 0, 55, 0, 85, 0, 0, 0, 108, 52, 59, 32, 86, 40, 0, 26, 24]
+        name: r0x7e00ce: [String 0x7e00ce: "B11 Strings"]
+]
+[instance 0x7e00c1: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00c3: [array 0x7e00c3 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 8, 32, 0, 102, 97, 73, 114, 8, 0, 56, 127, 0, 89, 127, 104, 0, 36, 3]
+        name: r0x7e00c2: [String 0x7e00c2: "A85 Rocket Men"]
+]
+[instance 0x7e00c7: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00c9: [array 0x7e00c9 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 127, 65, 116, 102, 127, 71, 44, 83, 0, 94, 127, 0, 94, 0, 112, 127, 41, 18]
+        name: r0x7e00c8: [String 0x7e00c8: "A87 FX Sweep"]
+]
+[instance 0x7e00c4: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00c6: [array 0x7e00c6 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 59, 0, 0, 0, 127, 17, 88, 54, 0, 55, 127, 1, 11, 0, 8, 0, 33, 5]
+        name: r0x7e00c5: [String 0x7e00c5: "A86 Hand Claps"]
+]
+[instance 0x7e00fa: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00fc: [array 0x7e00fc classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 108, 0, 0, 0, 0, 94, 127, 80, 23, 127, 0, 0, 127, 51, 71, 0, 2, 26]
+        name: r0x7e00fb: [String 0x7e00fb: "B28 FX Rise 2"]
+]
+[instance 0x7e00fd: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00ff: [array 0x7e00ff classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 51, 127, 0, 73, 0, 0, 0, 94, 0, 127, 72, 3, 44, 51, 11, 0, 82, 28]
+        name: r0x7e00fe: [String 0x7e00fe: "B31 Brass"]
+]
+[instance 0x7e00f1: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00f3: [array 0x7e00f3 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 78, 0, 6, 68, 0, 61, 0, 0, 0, 127, 62, 0, 0, 127, 26, 85, 90, 25]
+        name: r0x7e00f2: [String 0x7e00f2: "B25 Organ Bell"]
+]
+[instance 0x7e00f4: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00f6: [array 0x7e00f6 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 0, 0, 0, 64, 0, 77, 0, 14, 0, 74, 66, 8, 11, 110, 9, 80, 90, 1]
+        name: r0x7e00f5: [String 0x7e00f5: "B26 Accordion"]
+]
+[instance 0x7e00f7: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00f9: [array 0x7e00f9 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 116, 0, 0, 0, 0, 108, 127, 16, 127, 64, 0, 0, 0, 127, 84, 0, 68, 26]
+        name: r0x7e00f8: [String 0x7e00f8: "B27 FX Rise 1"]
+]
+[instance 0x7e00e8: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00ea: [array 0x7e00ea classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 72, 45, 0, 29, 0, 57, 0, 26, 0, 25, 115, 0, 89, 0, 32, 0, 42, 1]
+        name: r0x7e00e9: [String 0x7e00e9: "B22 Nylon Guitar"]
+]
+[instance 0x7e00eb: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00ed: [array 0x7e00ed classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 22, 45, 0, 105, 0, 33, 0, 55, 0, 36, 0, 29, 88, 50, 52, 127, 26, 24]
+        name: r0x7e00ec: [String 0x7e00ec: "B23 Orchestral Pad"]
+]
+[instance 0x7e00ee: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00f0: [array 0x7e00f0 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 0, 0, 0, 58, 0, 57, 0, 40, 0, 86, 104, 0, 25, 42, 44, 0, 42, 17]
+        name: r0x7e00ef: [String 0x7e00ef: "B24 Bright Pluck"]
+]
+[instance 0x7e00e2: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00e4: [array 0x7e00e4 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 127, 0, 0, 0, 127, 2, 0, 77, 0, 104, 92, 14, 78, 108, 120, 0, 33, 24]
+        name: r0x7e00e3: [String 0x7e00e3: "B18 Noise Sweep"]
+]
+[instance 0x7e00e5: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e00e7: [array 0x7e00e7 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 99, 0, 0, 0, 0, 70, 127, 0, 0, 74, 85, 0, 25, 0, 60, 0, 76, 24]
+        name: r0x7e00e6: [String 0x7e00e6: "B21 Space Chimes"]
+]
+[instance 0x7e0016: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0018: [array 0x7e0018 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 60, 43, 1, 0, 0, 55, 32, 10, 11, 41, 127, 23, 81, 0, 18, 0, 50, 1]
+        name: r0x7e0017: [String 0x7e0017: "A14 Flutes"]
+]
+[instance 0x7e0013: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0015: [array 0x7e0015 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 52, 45, 8, 102, 0, 55, 34, 24, 1, 59, 127, 5, 66, 48, 16, 0, 50, 9]
+        name: r0x7e0014: [String 0x7e0014: "A13 Trumpet"]
+]
+[instance 0x7e0010: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0012: [array 0x7e0012 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 6, 48, 0, 56, 0, 43, 17, 26, 0, 84, 75, 64, 118, 38, 37, 70, 82, 25]
+        name: r0x7e0011: [String 0x7e0011: "A12 Brass Swell"]
+]
+[instance 0x7e001f: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0021: [array 0x7e0021 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 59, 14, 13, 25, 0, 59, 94, 2, 0, 62, 127, 68, 11, 127, 48, 0, 74, 9]
+        name: r0x7e0020: [String 0x7e0020: "A17 Choir"]
+]
+[instance 0x7e001c: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e001e: [array 0x7e001e classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 35, 0, 0, 56, 0, 76, 17, 4, 0, 41, 78, 44, 66, 53, 44, 23, 73, 24]
+        name: r0x7e001d: [String 0x7e001d: "A16 Brass & Strings"]
+]
+[instance 0x7e0019: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e001b: [array 0x7e001b classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 63, 0, 0, 39, 0, 77, 20, 4, 0, 111, 34, 13, 87, 88, 35, 14, 26, 16]
+        name: r0x7e001a: [String 0x7e001a: "A15 Moving Strings"]
+]
+[instance 0x7e0007: 0x7e0005/java.util.Vector
+  object annotations:
+    java.util.Vector
+
+  field data:
+    0x7e0005/java.util.Vector:
+        capacityIncrement: 0
+        elementData: r0x7e0009: [array 0x7e0009 classdesc [cd 0x7e0008: name [Ljava.lang.Object; uid -8012369246846506644]: [arraycoll sz 160 Patch _h0x7e000c = r_0x7e000a;  , Patch _h0x7e0010 = r_0x7e000a;  , Patch _h0x7e0013 = r_0x7e000a;  , Patch _h0x7e0016 = r_0x7e000a;  , Patch _h0x7e0019 = r_0x7e000a;  , Patch _h0x7e001c = r_0x7e000a;  , Patch _h0x7e001f = r_0x7e000a;  , Patch _h0x7e0022 = r_0x7e000a;  , Patch _h0x7e0025 = r_0x7e000a;  , Patch _h0x7e0028 = r_0x7e000a;  , Patch _h0x7e002b = r_0x7e000a;  , Patch _h0x7e002e = r_0x7e000a;  , Patch _h0x7e0031 = r_0x7e000a;  , Patch _h0x7e0034 = r_0x7e000a;  , Patch _h0x7e0037 = r_0x7e000a;  , Patch _h0x7e003a = r_0x7e000a;  , Patch _h0x7e003d = r_0x7e000a;  , Patch _h0x7e0040 = r_0x7e000a;  , Patch _h0x7e0043 = r_0x7e000a;  , Patch _h0x7e0046 = r_0x7e000a;  , Patch _h0x7e0049 = r_0x7e000a;  , Patch _h0x7e004c = r_0x7e000a;  , Patch _h0x7e004f = r_0x7e000a;  , Patch _h0x7e0052 = r_0x7e000a;  , Patch _h0x7e0055 = r_0x7e000a;  , Patch _h0x7e0058 = r_0x7e000a;  , Patch _h0x7e005b = r_0x7e000a;  , Patch _h0x7e005e = r_0x7e000a;  , Patch _h0x7e0061 = r_0x7e000a;  , Patch _h0x7e0064 = r_0x7e000a;  , Patch _h0x7e0067 = r_0x7e000a;  , Patch _h0x7e006a = r_0x7e000a;  , Patch _h0x7e006d = r_0x7e000a;  , Patch _h0x7e0070 = r_0x7e000a;  , Patch _h0x7e0073 = r_0x7e000a;  , Patch _h0x7e0076 = r_0x7e000a;  , Patch _h0x7e0079 = r_0x7e000a;  , Patch _h0x7e007c = r_0x7e000a;  , Patch _h0x7e007f = r_0x7e000a;  , Patch _h0x7e0082 = r_0x7e000a;  , Patch _h0x7e0085 = r_0x7e000a;  , Patch _h0x7e0088 = r_0x7e000a;  , Patch _h0x7e008b = r_0x7e000a;  , Patch _h0x7e008e = r_0x7e000a;  , Patch _h0x7e0091 = r_0x7e000a;  , Patch _h0x7e0094 = r_0x7e000a;  , Patch _h0x7e0097 = r_0x7e000a;  , Patch _h0x7e009a = r_0x7e000a;  , Patch _h0x7e009d = r_0x7e000a;  , Patch _h0x7e00a0 = r_0x7e000a;  , Patch _h0x7e00a3 = r_0x7e000a;  , Patch _h0x7e00a6 = r_0x7e000a;  , Patch _h0x7e00a9 = r_0x7e000a;  , Patch _h0x7e00ac = r_0x7e000a;  , Patch _h0x7e00af = r_0x7e000a;  , Patch _h0x7e00b2 = r_0x7e000a;  , Patch _h0x7e00b5 = r_0x7e000a;  , Patch _h0x7e00b8 = r_0x7e000a;  , Patch _h0x7e00bb = r_0x7e000a;  , Patch _h0x7e00be = r_0x7e000a;  , Patch _h0x7e00c1 = r_0x7e000a;  , Patch _h0x7e00c4 = r_0x7e000a;  , Patch _h0x7e00c7 = r_0x7e000a;  , Patch _h0x7e00ca = r_0x7e000a;  , Patch _h0x7e00cd = r_0x7e000a;  , Patch _h0x7e00d0 = r_0x7e000a;  , Patch _h0x7e00d3 = r_0x7e000a;  , Patch _h0x7e00d6 = r_0x7e000a;  , Patch _h0x7e00d9 = r_0x7e000a;  , Patch _h0x7e00dc = r_0x7e000a;  , Patch _h0x7e00df = r_0x7e000a;  , Patch _h0x7e00e2 = r_0x7e000a;  , Patch _h0x7e00e5 = r_0x7e000a;  , Patch _h0x7e00e8 = r_0x7e000a;  , Patch _h0x7e00eb = r_0x7e000a;  , Patch _h0x7e00ee = r_0x7e000a;  , Patch _h0x7e00f1 = r_0x7e000a;  , Patch _h0x7e00f4 = r_0x7e000a;  , Patch _h0x7e00f7 = r_0x7e000a;  , Patch _h0x7e00fa = r_0x7e000a;  , Patch _h0x7e00fd = r_0x7e000a;  , Patch _h0x7e0100 = r_0x7e000a;  , Patch _h0x7e0103 = r_0x7e000a;  , Patch _h0x7e0106 = r_0x7e000a;  , Patch _h0x7e0109 = r_0x7e000a;  , Patch _h0x7e010c = r_0x7e000a;  , Patch _h0x7e010f = r_0x7e000a;  , Patch _h0x7e0112 = r_0x7e000a;  , Patch _h0x7e0115 = r_0x7e000a;  , Patch _h0x7e0118 = r_0x7e000a;  , Patch _h0x7e011b = r_0x7e000a;  , Patch _h0x7e011e = r_0x7e000a;  , Patch _h0x7e0121 = r_0x7e000a;  , Patch _h0x7e0124 = r_0x7e000a;  , Patch _h0x7e0127 = r_0x7e000a;  , Patch _h0x7e012a = r_0x7e000a;  , Patch _h0x7e012d = r_0x7e000a;  , Patch _h0x7e0130 = r_0x7e000a;  , Patch _h0x7e0133 = r_0x7e000a;  , Patch _h0x7e0136 = r_0x7e000a;  , Patch _h0x7e0139 = r_0x7e000a;  , Patch _h0x7e013c = r_0x7e000a;  , Patch _h0x7e013f = r_0x7e000a;  , Patch _h0x7e0142 = r_0x7e000a;  , Patch _h0x7e0145 = r_0x7e000a;  , Patch _h0x7e0148 = r_0x7e000a;  , Patch _h0x7e014b = r_0x7e000a;  , Patch _h0x7e014e = r_0x7e000a;  , Patch _h0x7e0151 = r_0x7e000a;  , Patch _h0x7e0154 = r_0x7e000a;  , Patch _h0x7e0157 = r_0x7e000a;  , Patch _h0x7e015a = r_0x7e000a;  , Patch _h0x7e015d = r_0x7e000a;  , Patch _h0x7e0160 = r_0x7e000a;  , Patch _h0x7e0163 = r_0x7e000a;  , Patch _h0x7e0166 = r_0x7e000a;  , Patch _h0x7e0169 = r_0x7e000a;  , Patch _h0x7e016c = r_0x7e000a;  , Patch _h0x7e016f = r_0x7e000a;  , Patch _h0x7e0172 = r_0x7e000a;  , Patch _h0x7e0175 = r_0x7e000a;  , Patch _h0x7e0178 = r_0x7e000a;  , Patch _h0x7e017b = r_0x7e000a;  , Patch _h0x7e017e = r_0x7e000a;  , Patch _h0x7e0181 = r_0x7e000a;  , Patch _h0x7e0184 = r_0x7e000a;  , Patch _h0x7e0187 = r_0x7e000a;  , Patch _h0x7e018a = r_0x7e000a;  , null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+        elementCount: 128
+]
+[instance 0x7e0003: 0x7e0000/Library
+  field data:
+    0x7e0000/Library:
+        name: r0x7e0004: [String 0x7e0004: "Factory Patches (position)"]
+        v: r0x7e0007: java.util.Vector _h0x7e0007 = r_0x7e0005;  
+]
+[instance 0x7e000c: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e000f: [array 0x7e000f classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 20, 49, 0, 102, 0, 35, 13, 58, 0, 86, 108, 3, 49, 45, 32, 0, 81, 17]
+        name: r0x7e000d: [String 0x7e000d: "A11 Brass Set 1"]
+]
+[instance 0x7e0034: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0036: [array 0x7e0036 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 28, 0, 0, 0, 0, 33, 24, 54, 0, 38, 96, 0, 44, 0, 81, 15, 44, 25]
+        name: r0x7e0035: [String 0x7e0035: "A26 Celeste* (1 oct.up)"]
+]
+[instance 0x7e0037: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0039: [array 0x7e0039 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 59, 0, 0, 0, 0, 16, 31, 61, 6, 35, 127, 1, 85, 43, 40, 0, 41, 1]
+        name: r0x7e0038: [String 0x7e0038: "A27 Elect. Piano I"]
+]
+[instance 0x7e0031: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0033: [array 0x7e0033 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 76, 21, 9, 57, 0, 73, 105, 15, 0, 78, 82, 2, 5, 43, 10, 127, 44, 7]
+        name: r0x7e0032: [String 0x7e0032: "A25 Donald Pluck"]
+]
+[instance 0x7e003d: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e003f: [array 0x7e003f classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 59, 0, 0, 0, 22, 44, 127, 0, 0, 127, 104, 0, 48, 0, 51, 127, 68, 27]
+        name: r0x7e003e: [String 0x7e003e: "A31 Clock Chimes* (1 oct. up)"]
+]
+[instance 0x7e003a: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e003c: [array 0x7e003c classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 0, 0, 0, 71, 0, 50, 69, 7, 0, 80, 102, 0, 68, 0, 22, 0, 73, 17]
+        name: r0x7e003b: [String 0x7e003b: "A28 Elect. Piano II"]
+]
+[instance 0x7e0025: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0027: [array 0x7e0027 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 54, 15, 0, 53, 0, 43, 76, 14, 1, 127, 100, 0, 10, 82, 0, 23, 41, 28]
+        name: r0x7e0026: [String 0x7e0026: "A21 Organ I"]
+]
+[instance 0x7e0022: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0024: [array 0x7e0024 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 20, 49, 0, 80, 0, 65, 12, 10, 0, 27, 103, 0, 66, 0, 30, 86, 42, 17]
+        name: r0x7e0023: [String 0x7e0023: "A18 Piano I"]
+]
+[instance 0x7e002e: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0030: [array 0x7e0030 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 82, 40, 11, 0, 0, 87, 27, 17, 0, 56, 89, 7, 127, 127, 6, 48, 74, 11]
+        name: r0x7e002f: [String 0x7e002f: "A24 Calliope"]
+]
+[instance 0x7e0028: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e002a: [array 0x7e002a classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 44, 15, 0, 53, 0, 53, 76, 14, 1, 85, 74, 0, 10, 82, 0, 58, 74, 28]
+        name: r0x7e0029: [String 0x7e0029: "A22 Organ II"]
+]
+[instance 0x7e002b: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e002d: [array 0x7e002d classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 75, 21, 9, 57, 0, 63, 70, 4, 0, 109, 96, 0, 48, 43, 46, 61, 44, 13]
+        name: r0x7e002c: [String 0x7e002c: "A23 Combo Organ"]
+]
+[instance 0x7e0052: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0054: [array 0x7e0054 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 58, 14, 0, 102, 0, 84, 8, 2, 0, 71, 77, 18, 44, 127, 40, 0, 12, 8]
+        name: r0x7e0053: [String 0x7e0053: "A38 High Strings"]
+]
+[instance 0x7e0055: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0057: [array 0x7e0057 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 52, 45, 8, 0, 0, 48, 36, 25, 8, 58, 104, 11, 75, 0, 25, 0, 41, 17]
+        name: r0x7e0056: [String 0x7e0056: "A41 Bass clarinet"]
+]
+[instance 0x7e005b: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e005d: [array 0x7e005d classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 52, 45, 0, 102, 0, 46, 44, 29, 1, 59, 103, 16, 103, 97, 34, 31, 82, 17]
+        name: r0x7e005c: [String 0x7e005c: "A43 Brass Ensemble"]
+]
+[instance 0x7e0058: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e005a: [array 0x7e005a classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 47, 45, 9, 102, 0, 70, 48, 7, 0, 27, 127, 8, 81, 26, 16, 0, 42, 1]
+        name: r0x7e0059: [String 0x7e0059: "A42 English Horn"]
+]
+[instance 0x7e005e: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0060: [array 0x7e0060 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 86, 58, 0, 65, 0, 12, 15, 71, 0, 30, 96, 0, 52, 54, 31, 0, 57, 17]
+        name: r0x7e005f: [String 0x7e005f: "A44 Guitar"]
+]
+[instance 0x7e0043: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0045: [array 0x7e0045 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 0, 0, 0, 0, 0, 29, 24, 54, 0, 51, 127, 0, 29, 29, 38, 15, 44, 25]
+        name: r0x7e0044: [String 0x7e0044: "A33 Xylophone"]
+]
+[instance 0x7e0040: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0042: [array 0x7e0042 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 33, 53, 0, 32, 9, 71, 46, 26, 0, 127, 127, 0, 26, 0, 37, 33, 74, 27]
+        name: r0x7e0041: [String 0x7e0041: "A32 Steel Drums"]
+]
+[instance 0x7e0046: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0048: [array 0x7e0048 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 52, 20, 0, 35, 0, 66, 24, 11, 0, 12, 127, 58, 100, 94, 37, 22, 82, 25]
+        name: r0x7e0047: [String 0x7e0047: "A34 Brass III"]
+]
+[instance 0x7e0049: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e004b: [array 0x7e004b classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 47, 0, 0, 70, 0, 44, 0, 32, 0, 67, 33, 72, 104, 75, 49, 50, 89, 24]
+        name: r0x7e004a: [String 0x7e004a: "A35 Fanfare"]
+]
+[instance 0x7e004f: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0051: [array 0x7e0051 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 60, 18, 0, 102, 0, 66, 2, 5, 0, 42, 127, 0, 11, 0, 12, 0, 90, 0]
+        name: r0x7e0050: [String 0x7e0050: "A37 Pizzicato"]
+]
+[instance 0x7e004c: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e004e: [array 0x7e004e classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 48, 27, 0, 102, 0, 71, 14, 0, 0, 84, 73, 63, 31, 127, 45, 0, 26, 16]
+        name: r0x7e004d: [String 0x7e004d: "A36 String III"]
+]
+[instance 0x7e0070: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0072: [array 0x7e0072 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 24, 88, 0, 53, 0, 45, 0, 43, 0, 52, 56, 1, 23, 91, 75, 79, 57, 20]
+        name: r0x7e0071: [String 0x7e0071: "A52 Lead II"]
+]
+[instance 0x7e0073: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0075: [array 0x7e0075 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 86, 71, 21, 102, 0, 60, 31, 18, 1, 76, 127, 0, 66, 48, 11, 0, 50, 21]
+        name: r0x7e0074: [String 0x7e0074: "A53 Lead III"]
+]
+[instance 0x7e0076: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0078: [array 0x7e0078 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 4, 0, 0, 48, 0, 5, 23, 81, 0, 41, 100, 0, 30, 39, 2, 57, 74, 21]
+        name: r0x7e0077: [String 0x7e0077: "A54 Funky II"]
+]
+[instance 0x7e0079: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e007b: [array 0x7e007b classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 90, 21, 0, 0, 0, 43, 0, 47, 0, 0, 78, 0, 37, 9, 22, 45, 49, 28]
+        name: r0x7e007a: [String 0x7e007a: "A55 Synth Bass II"]
+]
+[instance 0x7e007c: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e007e: [array 0x7e007e classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 4, 0, 0, 9, 101, 38, 54, 45, 0, 10, 79, 0, 24, 0, 2, 127, 57, 29]
+        name: r0x7e007d: [String 0x7e007d: "A56 Funky III"]
+]
+[instance 0x7e007f: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0081: [array 0x7e0081 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 62, 0, 0, 102, 8, 78, 89, 34, 0, 0, 106, 0, 0, 102, 45, 32, 26, 26]
+        name: r0x7e0080: [String 0x7e0080: "A57 Thud Wah"]
+]
+[instance 0x7e0061: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0063: [array 0x7e0063 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 90, 28, 0, 94, 0, 40, 58, 29, 0, 75, 127, 0, 56, 0, 39, 2, 74, 1]
+        name: r0x7e0062: [String 0x7e0062: "A45 Koto"]
+]
+[instance 0x7e0064: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0066: [array 0x7e0066 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 31, 0, 0, 87, 0, 38, 61, 27, 0, 71, 90, 0, 52, 15, 63, 97, 10, 25]
+        name: r0x7e0065: [String 0x7e0065: "A46 Dark Pluck"]
+]
+[instance 0x7e0067: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e0069: [array 0x7e0069 classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 4, 0, 0, 73, 0, 31, 23, 51, 0, 41, 71, 0, 30, 36, 2, 64, 89, 29]
+        name: r0x7e0068: [String 0x7e0068: "A47 Funky I"]
+]
+[instance 0x7e006a: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e006c: [array 0x7e006c classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 58, 16, 1, 57, 50, 32, 0, 66, 0, 35, 75, 0, 34, 0, 36, 102, 41, 25]
+        name: r0x7e006b: [String 0x7e006b: "A48 Synth Bass I (unison)"]
+]
+[instance 0x7e006d: 0x7e000a/Patch
+  field data:
+    0x7e000a/Patch:
+        sysex: r0x7e006f: [array 0x7e006f classdesc [cd 0x7e000e: name [B uid -5984413125824719648]: [arraycoll sz 18 72, 88, 18, 0, 0, 40, 97, 36, 0, 52, 99, 0, 45, 73, 0, 0, 42, 29]
+        name: r0x7e006e: [String 0x7e006e: "A51 Lead I"]
+]
+//// END instance dump
+
